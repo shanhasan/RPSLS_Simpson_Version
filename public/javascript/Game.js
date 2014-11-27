@@ -4,11 +4,16 @@ function Game(player1, player2) {
 }
 
 Game.prototype.PAIRS = {
-  rock:     { scissors: 'crushes', lizard: 'squashes' },
-  paper:    { rock: 'covers', spock: 'disproves' },
-  scissors: { paper: 'cuts', lizard: 'decapitates' },
-  lizard:   { spock: 'poisons', paper: 'eats' },
-  spock:    { rock: 'vaporises', scissors: 'smashes' }
+  // rock:     { scissors: 'crushes', lizard: 'squashes' },
+  // paper:    { rock: 'covers', spock: 'disproves' },
+  // scissors: { paper: 'cuts', lizard: 'decapitates' },
+  // lizard:   { spock: 'poisons', paper: 'eats' },
+  // spock:    { rock: 'vaporises', scissors: 'smashes' }
+  maggie:     { marge: 'scares', bart: 'jumps on' },
+  lisa:    { maggie: 'covers', homer: 'disproves' },
+  marge: { lisa: 'cuts', bart: 'decapitates' },
+  bart:   { homer: 'poisons', lisa: 'eats' },
+  homer:    { maggie: 'vaporises', marge: 'smashes' }
 }
 
 Game.prototype.winner = function() {
@@ -29,12 +34,22 @@ Game.prototype.loser = function() {
 Game.prototype.winningMessage = function() {
   var message;
 
+  var winner;
+  var loser;
+
   if(this.winner()) {
-    message = [this.winner().name,
+    if(this.winner() === this.player1) {
+      winner = this.winner().name;
+      loser = this.winner().pick;
+    }else {
+      winner = this.player1.pick;
+      loser = this.loser().name;
+    }
+    message = [winner,
     this._victoryVerbFor(this.winner().pick, this.loser().pick),
-    this.loser().name].join(' ');
+    loser].join(' ');
   } else {
-    message = 'Draw';
+    message = 'draw';
   }
 
   return message;
