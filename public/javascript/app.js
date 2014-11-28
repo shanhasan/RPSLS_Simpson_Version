@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  var you = new Player ('you');
+  var ming = new Player ('Ming');
   var Computer = new Player ('Computer');
-  var game = new Game (you, Computer);
+  var game = new Game (ming, Computer);
   var history = new Array();
   var arrayOfChoices = [];
   var computerChooses = [];
@@ -42,7 +42,7 @@ $(document).ready(function(){
   });
 
   $('.choices img').on('click', function(){
-  	you.picks($(this).data('pick'));
+  	ming.picks($(this).data('pick'));
 
 	if (history.length == 0){
 
@@ -97,7 +97,7 @@ $(document).ready(function(){
       })
     $('#results').append('<li>' + game.winningMessage() + '</li>');
 		
-		history.push(you.pick);
+		history.push(ming.pick);
 
 		if (history.length > 10){
 			history.shift();			
