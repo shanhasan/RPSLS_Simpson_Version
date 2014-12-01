@@ -8,12 +8,13 @@ For our 5th week at Makers our focus has perdominatly been on Javascript and jQu
 For our version of RPSLS (Rock, Paper, Sissors, Lizard, Spock) we designed it around the simpsons theame. Calling our game "Beat The Simpsons"
 
 #Technology Used - Front End
+
 - Javascript
 - jQuery
 - HTML
 - CSS
 - Capybara
-- Cucumber
+- Jasmine
 
 #Technology Used - Backend
 - Ruby
@@ -27,3 +28,4 @@ Ming Chan
 
 #Link to webpage
 - https://simpson-rps.herokuapp.com/
+
