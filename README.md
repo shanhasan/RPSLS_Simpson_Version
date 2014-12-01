@@ -5,7 +5,7 @@ For our 5th week at Makers our focus has perdominatly been on Javascript and jQu
 
 #Beat The Simpsons
 
-For our version of RPSLS (Rock, Paper, Sissors, Lizard, Spock) we designed it around the simpsons theame. Calling our game "Beat The Simpsons"
+For our version of RPSLS (Rock, Paper, Sissors, Lizard, Spock) we designed it around the simpsons theme. Calling our game "Beat The Simpsons"
 
 #Technology Used - Front End
 
