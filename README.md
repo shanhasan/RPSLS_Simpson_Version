@@ -1,4 +1,29 @@
-RockPaperScissorsLizardSpock in JavaScript with jQuery
-========================================================
+RockPaperScissorsLizardSpock
+=============================
 
-A shell for the Rock Paper Scissors Lizard Spock game in JavaScript with jQuery
+For our 5th week at Makers our focus has perdominatly been on Javascript and jQuery, a huge shift from Ruby. Even though the language doesn't seem as clean and straight forward as ruby, there is so denying the power this language has over the content we display on a webpage. 
+
+#Beat The Simpsons
+
+For our version of RPSLS (Rock, Paper, Sissors, Lizard, Spock) we designed it around the simpsons theame. Calling our game "Beat The Simpsons"
+
+#Technology Used - Front End
+- Javascript
+- jQuery
+- HTML
+- CSS
+- Capybara
+- Cucumber
+
+#Technology Used - Backend
+- Ruby
+- Agile
+- TDD
+- RSpec
+
+#Team Members
+Shan Hasan
+Ming Chan
+
+#Link to webpage
+- https://simpson-rps.herokuapp.com/
